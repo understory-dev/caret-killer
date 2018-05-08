@@ -1,0 +1,11 @@
+{
+  "name": "caret-killer",
+  "version": "1.0.0",
+  "description": "Change caret-prefixed dependencies to current version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Greer <jeremy.greer@engageonq.com>",
+  "license": "ISC"
+}
