@@ -31,7 +31,7 @@ that is actually installed.
 ## Installation
 
 ```sh
-yarn global add caret-killer --dev
+yarn global add caret-killer
 # I wonder if I should specify a version.
 ```
 
