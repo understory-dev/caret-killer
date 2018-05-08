@@ -31,13 +31,14 @@ that is actually installed.
 ## Installation
 
 ```sh
-yarn add caret-killer --dev
+yarn global add caret-killer --dev
 # I wonder if I should specify a version.
 ```
 
 
 ## Usage
 
-Run `index.js` in the root of your project.
-
-TODO: example
+```
+cd my-cool-project-with-jacked-depenendencies
+caret-killer
+```
