@@ -18,5 +18,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jeremy Greer <jeremy.greer@engageonq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/understory-dev/caret-killer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/understory-dev/caret-killer/issues"
+  },
+  "homepage": "https://github.com/understory-dev/caret-killer#readme"
 }
