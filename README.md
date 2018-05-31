@@ -42,3 +42,9 @@ yarn global add caret-killer
 cd my-cool-project-with-jacked-depenendencies
 caret-killer
 ```
+
+## Dev
+
+`node_modules` are not included, obviously, but you need them for tests.
+Navigate to `fixtures/` and `yarn` to set them up.  When running in test mode,
+the output will be `fixtures/result.package.json`.

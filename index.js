@@ -1,10 +1,12 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 const path = require('path')
 const fs = require('fs')
 
-// const projectDir = path.join(__dirname, 'fixtures')
-const projectDir = process.cwd()
+const isTestMode = process.env.NODE_ENV === 'test'
+const projectDir = isTestMode
+  ? path.join(__dirname, 'fixtures')
+  : projectDir = process.cwd()
 
 const readPackageJson = dir => {
   return JSON.parse(fs.readFileSync(
@@ -52,5 +54,8 @@ updateDeps(projectPackageJson, 'devDependencies')
 if (changes.length) {
   changes.sort().forEach(x => console.log(x))
   const prettyJson = JSON.stringify(projectPackageJson, null, 2)
-  fs.writeFileSync(path.join(projectDir, 'package.json'), prettyJson)
+  const outputFileName = isTestMode
+    ? 'result.package.json'
+    : 'package.json'
+  fs.writeFileSync(path.join(projectDir, outputFileName), prettyJson)
 }
