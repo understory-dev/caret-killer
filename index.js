@@ -2,20 +2,13 @@
 
 const path = require('path')
 const fs = require('fs')
+const readPackageJson = require('./read-package-json')
 
 const isTestMode = process.env.NODE_ENV === 'test'
 const projectDir = isTestMode
   ? path.join(__dirname, 'fixtures')
   : projectDir = process.cwd()
 
-const readPackageJson = dir => {
-  return JSON.parse(fs.readFileSync(
-    path.join(dir, 'package.json'),
-    'utf-8'
-  ))
-}
-
-// read package.json
 const projectPackageJson = readPackageJson(projectDir)
 
 const getCaretDeps = (deps) => {
