@@ -1,5 +1,7 @@
 # caret-killer
 
+![](https://user-images.githubusercontent.com/1720010/41296766-a80e5cb4-6e2b-11e8-999c-283994b7d6e0.png)
+
 ## Problem
 
 I don't trust semver adherence.  I've got a bunch of `^`s in my package.json
