@@ -41,7 +41,7 @@ yarn global add caret-killer
 ## Usage
 
 ```
-cd my-cool-project-with-jacked-depenendencies
+cd my-cool-project-with-jacked-dependencies
 caret-killer
 ```
 
