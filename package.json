@@ -1,6 +1,6 @@
 {
   "name": "caret-killer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Change caret-prefixed dependencies to current version.",
   "main": "index.js",
   "keywords": [
