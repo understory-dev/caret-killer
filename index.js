@@ -27,7 +27,7 @@ const getCaretDeps = (deps) => {
 const changes = []
 
 const updateDeps = (packageJson, depenencyType) => {
-  const caretDeps = getCaretDeps(packageJson[depenencyType])
+  const caretDeps = getCaretDeps(packageJson[depenencyType] || {})
   caretDeps.forEach(dep => {
     const depDir = path.join(projectDir, 'node_modules', dep.name)
     const depPackageJson = readPackageJson(depDir)
